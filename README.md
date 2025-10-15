@@ -1,4 +1,59 @@
-# Getting Started with Create React App
+# Rock Paper Scissors — Animated Edition
+
+An immersive, polished Rock–Paper–Scissors game built with React. Features a cinematic background arena, animated hand collisions, win confetti, lose shake/vignette, and a playful scoreboard with emotions and attitude.
+
+## Features
+- **Background arena** with floating ambient blobs
+- **Hand charge + impact** animation on each round
+- **Outcome reactions**:
+  - Win: confetti burst and celebratory impact ring
+  - Lose: screen shake, red vignette, optional vibration
+  - Draw: subtle impact only
+- **Scoreboard emotions**:
+  - When you lead: 😡 beside the computer
+  - When computer leads: 😎 with look‑away and floating "HA/Ha/ha..." bubbles
+- **Polished title** with gradient and animated underline
+- **Keyboard shortcuts**: `R` (Rock), `P` (Paper), `S` (Scissors), `X` (Reset)
+
+## Quick Start
+```bash
+npm install
+npm start
+```
+Open http://localhost:3000
+
+## How to Play
+- Click a choice or press `R`/`P`/`S`
+- Watch the hands collide in the background arena
+- Read the result and enjoy the appropriate visual effects
+- Press `X` or click Reset to start fresh
+
+## Scripts
+- `npm start` — Run dev server
+- `npm test` — Run tests (if any)
+- `npm run build` — Production build to `build/`
+
+## Tech Stack
+- React (Create React App)
+- Pure CSS animations (no external animation libs)
+
+## Project Structure
+- `src/App.js` — Game state and animation triggers
+- `src/components/` — UI pieces (`ChoiceButton`, `ScoreBoard`, `ResultDisplay`)
+- `src/styles.css` — All animations and styles
+
+## Accessibility & Performance
+- Honors `navigator.vibrate` where supported for tactile feedback
+- Animations tuned for smoothness; lightweight DOM updates
+- If needed, we can add a reduced‑motion option
+
+## Deployment
+- Build with `npm run build`
+- Host the `build/` folder on any static host or GitHub Pages
+
+---
+
+## CRA Reference
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
